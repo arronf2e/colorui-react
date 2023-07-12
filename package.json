@@ -60,6 +60,7 @@
     "@types/react-dom": "^18.2.6",
     "@umijs/lint": "^4.0.72",
     "dumi": "^2.2.1",
+    "dumi-theme-mobile": "^2.1.1",
     "eslint": "^8.44.0",
     "father": "^4.2.3",
     "husky": "^8.0.3",
