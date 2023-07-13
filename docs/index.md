@@ -4,9 +4,9 @@ hero:
   description: A react library developed with dumi
   actions:
     - text: 快速开始
-      link: /components
+      link: /components/alert
     - text: 查看源码
-      link: /
+      link: https://github.com/arronf2e/colorui-react
 features:
   # - title: Hello
   #   emoji: 💎
@@ -18,3 +18,4 @@ features:
   #   emoji: 🚀
   #   description: Put ! description here
 ---
+

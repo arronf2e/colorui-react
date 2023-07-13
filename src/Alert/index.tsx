@@ -1,6 +1,12 @@
 import React, { type FC } from 'react';
 
+import './style/index'
+
 export interface AlertProps {
+  /**
+   * @description 属性描述
+   * @default "默认值"
+   */
   type?: 'info' | 'positive' | 'negative' | 'warning';
 }
 
