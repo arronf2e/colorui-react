@@ -37,11 +37,11 @@
       "prettier --write"
     ],
     "*.{js,jsx}": [
-      "eslint --config ./.eslintrc.js --fix",
+      "eslint --fix",
       "prettier --write"
     ],
     "*.{ts,tsx}": [
-      "eslint --config ./.eslintrc.js --fix",
+      "eslint --fix",
       "prettier --parser=typescript --write"
     ]
   },
