@@ -1,13 +1,11 @@
 import React, { type FC } from 'react';
-
+import './style/index';
 export interface ButtonInterface {
-  /**
-   * @description 属性描述
-   * @default "默认值"
-   */
   title?: string;
 }
 
-const CuButton: FC<ButtonInterface> = (props) => <h4>{props.title}</h4>;
+const CuButton: FC<ButtonInterface> = (props) => (
+  <div className="cu-btn">{props.title}</div>
+);
 
 export default CuButton;

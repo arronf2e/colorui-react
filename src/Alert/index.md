@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Alert 警告提示
 nav:
   title: 组件
@@ -6,21 +6,22 @@ nav:
 group:
   title: 反馈
   order: 1
----
+--- -->
 
 # Alert
+
+## 演示
 
 This is an Alert component.
 
 ```jsx
-
 // /**
 //  * debug: true
 //  */
 
 import { CuAlert } from 'colorui-react';
 
-export default () => <CuAlert />
+export default () => <CuAlert />;
 ```
 
 ## API

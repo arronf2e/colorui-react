@@ -1,4 +1,5 @@
 import { defineConfig } from 'dumi';
+const UnoCSS = require('@unocss/webpack').default;
 
 export default defineConfig({
   outputPath: 'docs-dist',
@@ -6,13 +7,12 @@ export default defineConfig({
     name: 'colorui-react',
     hd: { rules: [] },
     deviceWidth: 375,
-    nav: [
-      { title: '组件', link: '/components/alert' }
-    ]
+    nav: [{ title: '组件', link: '/components/alert' }],
   },
-  // apiParser: {},
-  // resolve: {
-  //   // 配置入口文件路径，API 解析将从这里开始
-  //   entryFile: './src/index.tsx',
-  // },
+  chainWebpack: (config) => {
+    config.plugin('unocss').use(UnoCSS());
+    config.optimization.merge({
+      realContentHash: true,
+    });
+  },
 });
