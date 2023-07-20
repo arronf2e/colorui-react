@@ -1,8 +1,5 @@
-import { defineConfig } from 'unocss';
+import { defineConfig, presetIcons, presetUno } from 'unocss';
 
 export default defineConfig({
-  rules: [
-    // eslint-disable-next-line
-    [/^m-([\.\d]+)$/, ([_, num]) => ({ margin: `${num}px` })],
-  ],
+  presets: [presetUno(), presetIcons()],
 });

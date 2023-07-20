@@ -1,12 +1,12 @@
-<!-- ---
+---
 title: Alert 警告提示
 nav:
   title: 组件
   order: 2
 group:
   title: 反馈
-  order: 1
---- -->
+  order: 2
+---
 
 # Alert
 
