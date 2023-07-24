@@ -1,7 +1,11 @@
 {
   "name": "colorui-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A react library developed with dumi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arronf2e/colorui-react"
+  },
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -84,6 +88,5 @@
   },
   "authors": [
     "arronf2e@163.com"
-  ],
-  "git repository": "https://github.com/arronf2e/colorui-react"
+  ]
 }
