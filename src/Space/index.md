@@ -44,7 +44,7 @@ export default () => {
 
 ## API
 
-| 属性      | 说明     | 类型     | 默认值     |
-| --------- | -------- | -------- | ---------- | ---------- |
-| size      | 间隔大小 | number   | 10         |
-| direction | 间距方向 | vertical | horizontal | horizontal |
+| 属性      | 说明     | 类型                  | 默认值     |
+| --------- | -------- | --------------------- | ---------- |
+| size      | 间隔大小 | number                | 10         |
+| direction | 间距方向 | vertical / horizontal | horizontal |
