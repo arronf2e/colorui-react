@@ -7,7 +7,9 @@ A react library developed with dumi
 
 ## Usage
 
-TODO
+```
+npm install colorui-react
+```
 
 ## Options
 
