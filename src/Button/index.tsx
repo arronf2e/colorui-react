@@ -1,11 +1,19 @@
 import React, { type FC } from 'react';
-import './style/index';
+import './index.css';
+
 export interface ButtonInterface {
-  title?: string;
+  size?: string;
+  children?: any;
 }
 
-const CuButton: FC<ButtonInterface> = (props) => (
-  <div className="cu-btn">{props.title}</div>
-);
+const CuButton: FC<ButtonInterface> = (props) => {
+  const { children } = props;
+
+  return (
+    <button type="button" className="cu-btn">
+      {children}
+    </button>
+  );
+};
 
 export default CuButton;

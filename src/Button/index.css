@@ -1,0 +1,12 @@
+.cu-btn {
+  @apply pt-2 pb-2 b-rd text-white b-hidden f-hidden bg-blue-500 bg-blend-color;
+}
+
+.cu-btn::after {
+  display: none;
+}
+
+.cu-btn:not([class*='bg-']) {
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 88%);
+}

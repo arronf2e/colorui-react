@@ -13,9 +13,16 @@ group:
 This is an Button component.
 
 ```jsx
-import { CuButton } from 'colorui-react';
+import { CuButton, CuSpace } from 'colorui-react';
 
-export default () => <CuButton title="Hello dumi!1" />;
+export default () => {
+  return (
+    <CuSpace>
+      <CuButton>Hello dumi!1</CuButton>
+      <CuButton>Hello dumi!1</CuButton>
+    </CuSpace>
+  );
+};
 ```
 
 <!-- <API id="CuButton"></API> -->
