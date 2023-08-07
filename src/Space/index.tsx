@@ -6,13 +6,12 @@ export interface SpaceInterface {
   children?: React.ReactNode;
 }
 
-const CuSpace: FC<SpaceInterface> = (props) => {
-  const { direction = 'horizontal', children } = props;
+const prefixCls = 'cu-space';
 
+const CuSpace: FC<SpaceInterface> = (props) => {
+  const { children } = props;
   return (
-    <div
-      className={`flex ${direction === 'vertical' ? 'flex-col' : ''} cu-gap-4`}
-    >
+    <div className={prefixCls}>
       {React.Children.map(children, (child, index) => {
         return (
           <div className="cu-space-item" key={index}>

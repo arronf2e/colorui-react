@@ -5,8 +5,10 @@ export interface InputInterface {
   styles: CSSStyleDeclaration;
 }
 
+const prefixCls = 'cu-input';
+
 const CuInput: FC<InputInterface> = () => (
-  <input type="text" placeholder="please input" />
+  <input className={prefixCls} type="text" placeholder="please input" />
 );
 
 export default CuInput;

@@ -15,10 +15,6 @@ group:
 This is an Alert component.
 
 ```jsx
-// /**
-//  * debug: true
-//  */
-
 import { CuAlert } from 'colorui-react';
 
 export default () => <CuAlert />;
