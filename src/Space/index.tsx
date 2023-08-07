@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import React, { type FC } from 'react';
 
 export interface SpaceInterface {
@@ -8,20 +7,11 @@ export interface SpaceInterface {
 }
 
 const CuSpace: FC<SpaceInterface> = (props) => {
-  const { size = 10, direction = 'horizontal', children } = props;
-
-  const spaceClass = classNames('flex', {
-    'flex-col': direction === 'vertical',
-  });
-
-  console.log(spaceClass, 'spaceClass');
+  const { direction = 'horizontal', children } = props;
 
   return (
     <div
-      className={spaceClass}
-      style={{
-        gap: `${size}px`,
-      }}
+      className={`flex ${direction === 'vertical' ? 'flex-col' : ''} cu-gap-4`}
     >
       {React.Children.map(children, (child, index) => {
         return (

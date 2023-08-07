@@ -24,7 +24,7 @@ export default () => {
     setDirection((direction) => !direction);
   };
   return (
-    <CuSpace direction="vertical" size={20}>
+    <CuSpace direction="vertical" size={3}>
       <div>
         <input type="range" onChange={handleRangeChange} />{' '}
         <span>间距：{space}</span>
